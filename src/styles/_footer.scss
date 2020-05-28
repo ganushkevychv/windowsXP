@@ -1,0 +1,14 @@
+.date {
+    background: #64a2d8;
+    color: white;
+    padding-right:5px;
+    padding-top: 5px;
+    border-color: #64a2d8;
+}
+.pBtn {
+    float: right;
+ 
+}
+.pBtn:before {
+    background-image: url("../images/icons/me.png");
+}
