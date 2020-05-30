@@ -3,11 +3,12 @@ import { Link } from "gatsby"
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
 import Logo from "../images/icons/me.png"
 import Start from "../images/icons/startBtn.svg"
+import Shutdawn from "../images/icons/shutdown.svg"
 
 const Menu = (props) => {
 const onClose = () => {
     window.opener = null;
-    window.open("", "_self");
+    window.open("https://romantic-johnson-a557e4.netlify.app/", "_self");
     window.close();
 };
 
@@ -31,6 +32,18 @@ const header = {
     borderTopRightRadius: "10px",
     borderTopLeftRadius: "10px",
 }
+const shutdown = {
+    width: "30px",
+    height:"30px",
+}
+const shutdownBtn = {
+    backgroundColor:"white",
+    borderColor:"white",
+    outline:"0",
+    boxShadow:"none",
+    outlineOffset:"0",
+    color:"white"
+}
   const toggle = () => setOpen(!dropdownOpen);
 
   return (
@@ -42,10 +55,10 @@ const header = {
         
         <DropdownItem>Action</DropdownItem>
         <DropdownItem divider/>
-        <DropdownItem>Another Action</DropdownItem>
+        <DropdownItem>Projects</DropdownItem>
         <DropdownItem divider />
-        <DropdownItem>Another Action</DropdownItem>
-        <DropdownItem><button onClick={onClose}>close</button></DropdownItem>
+        <DropdownItem>Games</DropdownItem>
+        <DropdownItem><button style={shutdownBtn} onClick={onClose}><img style={shutdown} src={Shutdawn} alt="shutdown"/></button></DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
   );
