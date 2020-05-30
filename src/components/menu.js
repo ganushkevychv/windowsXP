@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
-import { Link } from "gatsby"
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
 import Logo from "../images/icons/me.png"
 import Start from "../images/icons/startBtn.svg"
 import Shutdawn from "../images/icons/shutdown.svg"
+import Tab from "../components/tab"
+
 
 const Menu = (props) => {
-const onClose = () => {
-    window.opener = null;
-    window.open("https://romantic-johnson-a557e4.netlify.app/", "_self");
-    window.close();
-};
+
 
 const [dropdownOpen, setOpen] = useState(false);
 const textStart = {
@@ -58,7 +55,9 @@ const shutdownBtn = {
         <DropdownItem>Projects</DropdownItem>
         <DropdownItem divider />
         <DropdownItem>Games</DropdownItem>
-        <DropdownItem><button style={shutdownBtn} onClick={onClose}><img style={shutdown} src={Shutdawn} alt="shutdown"/></button></DropdownItem>
+        <DropdownItem>
+            <Tab/>
+        </DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
   );
