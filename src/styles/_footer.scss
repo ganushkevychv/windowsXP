@@ -8,7 +8,40 @@
 .pBtn {
     float: right;
  
+}   
+.date:hover {
+    background: #64a2d8;
+    border-color: #64a2d8;
 }
-.pBtn:before {
-    background-image: url("../images/icons/me.png");
+.sBtn {
+    float:left;
+}
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    border-color: 2px solid silver;
+} 
+.start {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.textStart {
+    font-weight:bold;
+    background-color: green;
+    border-color: green;
+}
+.textStart:hover {
+    background-color: green;
+    border-color: green;
+}
+.textStart:focus {
+    background-color: green;
+    border-color: green;
+}
+.dropdown-menu.show {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

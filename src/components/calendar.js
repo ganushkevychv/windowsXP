@@ -18,6 +18,6 @@ class Cal extends Component {
         />
       </div>
     );
-  }
+    }
 }
 export default Cal

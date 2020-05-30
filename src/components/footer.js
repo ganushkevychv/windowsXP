@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from "moment"
 import Cal from "../components/calendar"
+import Menu from "../components/menu"
 import { Button, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
 import Logo from "../images/icons/me.png"
 
@@ -9,7 +10,7 @@ const Footer = () => {
 const m = moment();
 
   let style = {
-    backgroundColor: "blue",
+    backgroundColor: "blue",    
     borderTop: "1px solid #E7E7E7",
     paddingRight:"5px",
     padding: "0px",
@@ -37,13 +38,13 @@ let phantom = {
      {m.format("LT")}
       </Button>
       <UncontrolledPopover placement="bottom" target="UncontrolledPopover">
-        <PopoverHeader>Popover Title</PopoverHeader>
+  <PopoverHeader>Calendar {m.format("LL")}</PopoverHeader>
         <PopoverBody>
         <Cal/>
         </PopoverBody>
       </UncontrolledPopover>
-
      </p>
+<Menu/>
       </div>
       </div>
   )
