@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Logo from "../images/icons/me.png"
 import Start from "../images/icons/startBtn.svg"
-import Shutdawn from "../images/icons/shutdown.svg"
 import Tab from "../components/tab"
+import Reload from './reload';
 
 
 const Menu = (props) => {
@@ -29,18 +29,22 @@ const header = {
     borderTopRightRadius: "10px",
     borderTopLeftRadius: "10px",
 }
-const shutdown = {
-    width: "30px",
-    height:"30px",
+const menuFooter = {
+  display:"flex",
+  flexDirection:"row-reverse",
+  justifyContent:"space-evently",
+  align:"middle",
+  backgroundColor:"blue",
+  marginTop:"8px",
+  marginBottom:"-9px",
+  color:"white",
+  fontWeight:"bold",
+  borderBottomRightRadius: "10px",
+  borderBottomLeftRadius: "10px",
+  marginRight:"20px",
 }
-const shutdownBtn = {
-    backgroundColor:"white",
-    borderColor:"white",
-    outline:"0",
-    boxShadow:"none",
-    outlineOffset:"0",
-    color:"white"
-}
+
+
   const toggle = () => setOpen(!dropdownOpen);
 
   return (
@@ -55,8 +59,9 @@ const shutdownBtn = {
         <DropdownItem>Projects</DropdownItem>
         <DropdownItem divider />
         <DropdownItem>Games</DropdownItem>
-        <DropdownItem>
-            <Tab/>
+        <DropdownItem style={menuFooter}>
+            <Tab/>  
+            <Reload/>
         </DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
