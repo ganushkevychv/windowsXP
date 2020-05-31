@@ -2,9 +2,8 @@ import React from 'react';
 import moment from "moment"
 import Cal from "../components/calendar"
 import Menu from "../components/menu"
-import Reload from "../components/reload"
 import { Button, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactstrap';
-import Logo from "../images/icons/me.png"
+
 
 const Footer = () => {
 
