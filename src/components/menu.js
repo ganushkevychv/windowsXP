@@ -3,7 +3,8 @@ import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reac
 import Logo from "../images/icons/me.png"
 import Start from "../images/icons/startBtn.svg"
 import Tab from "../components/tab"
-import Reload from './reload';
+import Reload from '../components/reload';
+import CV from '../components/cv';
 
 
 const Menu = (props) => {
@@ -54,7 +55,9 @@ const menuFooter = {
       
       <a href="https://vladyslav-ganushkevych.netlify.app/"><DropdownItem style={header}><img style={logo} src={Logo} alt="my logo"/> Vladyslav Ganushkevych</DropdownItem></a>
         
-        <DropdownItem>Action</DropdownItem>
+        <DropdownItem>
+          <CV/>
+        </DropdownItem>
         <DropdownItem divider/>
         <DropdownItem>Projects</DropdownItem>
         <DropdownItem divider />

@@ -3,7 +3,7 @@ import solitaire from "../images/icons/solitaire.svg"
 import quake from "../images/icons/quake.png"
 import doom from "../images/icons/Doom.png"
 import cs from "../images/icons/cs.png"
-const Desctop = () => {
+const Desktop = () => {
 const container = {
     display:"flex",
     flexDirection:"column",
@@ -30,4 +30,4 @@ return(
 )
 
 }
-export default Desctop
+export default Desktop
