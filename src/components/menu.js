@@ -56,7 +56,6 @@ const menuFooter = {
       <a href="https://vladyslav-ganushkevych.netlify.app/"><DropdownItem style={header}><img style={logo} src={Logo} alt="my logo"/> Vladyslav Ganushkevych</DropdownItem></a>
         
         <DropdownItem>
-          y
         <CV/>
         </DropdownItem>
         <DropdownItem divider/>
