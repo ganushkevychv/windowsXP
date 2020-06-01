@@ -1,6 +1,6 @@
 import React from "react"
-import {Link} from "gatsby"
 import dl from "../images/icons/download.png"
+import DownLoadFile from "../files/Vladyslav Ganushkevych_CV.pdf"
 
 const CV = () => {
 
@@ -15,9 +15,9 @@ const CV = () => {
 
     return (
         <div>
-            <Link style={cv} to="../public/cv/Vladyslav Ganushkevych_CV.pdf" download="Vladyslav Ganushkevych_CV.pdf">
+            <a style={cv} href={DownLoadFile} target="_blank" rel="noreferrer" download="Vladyslav Ganushkevych_CV.pdf">
                 My CV <img style={download} src={dl} alt="download icon"/>
-                </Link>
+                </a>
         </div>
     )
 }
