@@ -8,7 +8,10 @@ import { Button, UncontrolledPopover, PopoverHeader, PopoverBody } from 'reactst
 const Footer = () => {
 
 const m = moment();
-
+let popoverHeader = {
+  textAlign:"center",
+  backgroundColor:"blue",
+}
   let style = {
     backgroundColor: "blue",    
     borderTop: "1px solid #E7E7E7",
@@ -38,7 +41,9 @@ let phantom = {
      {m.format("LT")}
       </Button>
       <UncontrolledPopover placement="bottom" target="UncontrolledPopover">
-  <PopoverHeader style={{textAlign:"center", backgroundColor:"blue",}}>Calendar {m.format("LL")}</PopoverHeader>
+  
+
+  <PopoverHeader style={popoverHeader}>Calendar {m.format("LL")}</PopoverHeader>
         <PopoverBody>
         <Cal/>
         </PopoverBody>

@@ -15,7 +15,7 @@ const Reload = () => {
     }
     return (
         <div>Restart {""}  
-        <button onClick={refreshPage}><img style={btn} src={reload} alt="reload bt"/> </button>
+        <span onClick={refreshPage}><img style={btn} src={reload} alt="reload bt"/> </span>
         </div>
       
     )

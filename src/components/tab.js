@@ -17,7 +17,7 @@ const Tab = () => {
     }
       return (
         <div>Turn off computer {""} 
-          <button onClick={onClose}><img style={btn} src={shutdown} alt="shutdown btn"/></button>
+          <span onClick={onClose}><img style={btn} src={shutdown} alt="shutdown btn"/></span>
           
         </div>
       );  
